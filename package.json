@@ -1,6 +1,6 @@
 {
-  "name": "mongoose-diff-history",
-  "version": "1.1.2",
+  "name": "@lyearn/mongoose-document-history",
+  "version": "0.0.21",
   "description": "Manage Mongo Collection diff History and versions",
   "main": "diffHistoryModel.js",
   "directories": {
@@ -8,31 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mimani/mongoose-diff-history"
+    "url": "https://github.com/Mastermaulik/mongoose-diff-history"
   },
   "dependencies": {
     "async": "*",
-    "jsondiffpatch": "0.1.38"
+    "elasticsearch": "^13.3.1",
+    "jsondiffpatch": "0.1.38",
+    "lodash": "^4.17.4",
+    "mongoosastic": "^4.3.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3",
     "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
     "mongoose": "~4.1.12"
   },
   "scripts": {
     "test": "istanbul cover --report lcov  _mocha tests --recursive"
   },
-  "author": [
-    {
-      "name": "Saurabh Mimani",
-      "email": "mimani.saurabh@gmail.com"
-    },
-    {
-      "name": "Amith Prasad",
-      "email": "send2amith@gmail.com"
-    }
-  ],
   "engines": {
     "node": "*"
   },
@@ -45,7 +38,7 @@
     "versioning"
   ],
   "bugs": {
-    "url": "https://github.com/mimani/mongoose-diff-history/issues"
+    "url": "https://github.com/Mastermaulik/mongoose-diff-history/issues"
   },
   "license": "GPL-2.0"
 }
